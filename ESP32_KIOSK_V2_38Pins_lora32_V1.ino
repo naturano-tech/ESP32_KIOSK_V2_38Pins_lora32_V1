@@ -517,7 +517,7 @@ void sendLora(String request_url) {
     ResponseStatus rs;
     do {
       rs = e32ttl.sendMessage(chunk);
-      affichage_LCD(0, 1, true, rs.getResponseDescription());
+      //affichage_LCD(0, 1, true, rs.getResponseDescription());
       delay(1000);
     } while (rs.getResponseDescription() != "Success");
   }
